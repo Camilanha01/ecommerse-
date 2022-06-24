@@ -1,0 +1,26 @@
+/*========== GENERAL ===============*/
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+$tipografia: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+a {
+    text-decoration: none;
+}
+
+body, p, a, span {
+    font-family: $tipografia;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $tipografia;
+}
+
+img {
+    max-width: 100%;
+    border-style: none;
+    border: 0;
+}

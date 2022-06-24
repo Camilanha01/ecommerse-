@@ -1,0 +1,537 @@
+/*========== GENERAL ===============*/
+*, ::after, ::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, p, a, span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  border-style: none;
+  border: 0;
+}
+
+/* ============ NAV ===============*/
+.nav-header-area {
+  background-color: #fff;
+  padding: 3px 0px;
+}
+
+.nav-logo {
+  color: #041b40 !important;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-nav1 .nav-item {
+  margin-left: 15px;
+  position: relative;
+}
+
+.navbar-nav1 .nav-item .nav-link {
+  font-weight: 600;
+  color: black;
+  transform: 0.4s;
+}
+.navbar-nav1 .nav-item .nav-link i {
+  font-size: 8px;
+  color: black;
+  margin-left: 4px;
+  position: relative;
+  top: -2px;
+  transition: 0.4s;
+}
+
+.navbar-nav1 .nav-item:hover .head-dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 153%;
+}
+
+.navbar-nav1 .nav-item .head-dropdown {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 190%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  z-index: 99;
+}
+.navbar-nav1 .nav-item .head-dropdown li {
+  display: block;
+}
+.navbar-nav1 .nav-item .head-dropdown li a {
+  display: block;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  transition: 0.4s;
+}
+
+.nav-chart i {
+  font-size: 30px;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  top: 4px;
+}
+
+.nav-form {
+  position: relative;
+  width: 19%;
+}
+.nav-form input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #f5f5f5;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  transition: 0.5s;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+.nav-form button {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 21px;
+}
+
+/* efecto en nav */
+#navbar li a.active::after, #navbar li a:hover::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  bottom: -3px;
+  left: 20px;
+}
+
+/*============== MAIN ================*/
+.bannar-area {
+  background-image: url(../img/banner.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0px;
+  background-attachment: fixed;
+}
+
+.bannar-btn {
+  margin-top: 31px;
+  display: flex;
+}
+
+.bannar-content span {
+  color: #f35320;
+  font-size: 18px;
+}
+
+.bannar-content h1 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+
+.bannar-content p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.defult-btn {
+  background-color: #f99459;
+  padding: 13px 35px;
+  border-radius: 25px;
+  color: #fff !important;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.defult-btn::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  background-color: #f35320;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border-radius: 25px;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.bannar-btn2 {
+  background-color: #f35320;
+  padding: 13px 31px;
+  border-radius: 25px;
+  color: #fff !important;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 19px;
+}
+
+.bannar-btn2::before {
+  content: "";
+  width: 100%;
+  height: 0%;
+  background-color: #f99459;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 25px;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+/*responsive*/
+@media (max-width: 400px) {
+  .bannar-area {
+    padding: 66px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .bannar-area {
+    padding: 117px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .bannar-area {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner2.jpg);
+  }
+}
+@media (max-width: 575px) {
+  .bannar-content {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-content h1 {
+    font-size: 41px;
+  }
+}
+@media (max-width: 575px) {
+  .bannar-content h1 {
+    font-size: 53px;
+  }
+}
+@media (max-width: 767px) {
+  .bannar-content h1 {
+    font-size: 63px;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-content p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 0px 49px;
+  }
+}
+@media (max-width: 575px) {
+  .bannar-btn {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .defult-btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-btn2 {
+    font-size: 14px;
+  }
+}
+/*============= SECCION 2 CSS ===================*/
+#home_seccion1 {
+  padding-top: 0;
+  transition: all 0.5s ease-out;
+}
+
+#home_seccion1 .row:first-child {
+  margin-bottom: 3rem;
+}
+
+#home_seccion1 .title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: "Interstate Black Levis", sans-serif;
+}
+
+#home_seccion1 .title a {
+  text-decoration: underline;
+}
+
+#home_seccion1 .item a {
+  display: block;
+}
+
+#home_seccion1 .item picture {
+  display: block;
+  overflow: hidden;
+}
+
+#home_seccion1 .item h4 {
+  font-weight: initial;
+  text-transform: initial;
+}
+
+#home_seccion1 .item picture img {
+  display: block;
+  transition: all 0.4s ease-in-out;
+}
+
+#home_seccion1 .item picture img:hover {
+  transform: scale(1.2);
+}
+
+#home_seccion1 .item picture img {
+  display: block;
+  transition: all 0.4s ease-in-out;
+}
+
+/*============== SECCION 3 (FAVORITOS)===================*/
+.fav-area {
+  background-color: #f3f3f3;
+  padding: 100px 0px;
+}
+
+.icon2-favoritos {
+  margin-top: 14px;
+}
+
+.img-favoritos img {
+  transition: 0.4s;
+}
+
+.texto-contenido-favorito h2 {
+  font-size: 25px;
+  margin: 26px 0px 18px 0px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.icon2-favoritos {
+  margin-top: 14px;
+}
+
+.icon2-favoritos a {
+  color: #f35320;
+  font-size: 14px;
+  margin-left: 2px;
+}
+
+.img-favoritos:hover .boton {
+  visibility: visible;
+  -webkit-animation: fade 0.5s;
+          animation: fade 0.5s;
+}
+
+.img-favoritos {
+  position: relative;
+}
+
+.boton {
+  visibility: hidden;
+}
+
+.boton {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(92, 95, 236, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-buy {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #252525;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: calibri;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.boton-buy:hover {
+  color: #FFFFFF;
+  background-color: #f15fa3;
+  transition: all ease 0.3s;
+  border-color: #fff;
+}
+
+/*=========== BANNER ===============*/
+#banner {
+  background-image: url(../img/banner2.jpg);
+  width: 100%;
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner h1 {
+  color: white;
+  margin-bottom: 25px;
+  padding: 12px 0;
+}
+
+button.normal {
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+#banner button:hover {
+  background-color: #088178;
+  color: #fff;
+}
+
+#banner span {
+  color: #ef3636;
+}
+
+@media (max-width: 799px) {
+  #banner {
+    height: 15vh;
+  }
+}
+@media (max-width: 799px) {
+  #banner h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 477px) {
+  #banner {
+    height: 25vh;
+  }
+}
+@media (max-width: 477px) {
+  #banner h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+}
+/*================ NEWSLETTER =====================*/
+.subscrube-area {
+  background-color: #fafafa;
+  padding: 100px 0px 60px 0px;
+}
+
+.defult-content {
+  margin-bottom: 52px;
+}
+
+.subscribe-left-content h1 {
+  font-size: 35px;
+}
+
+.defult-content h1 {
+  color: black;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.defult-content p {
+  color: #6b6b84;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.subscribe-email {
+  position: relative;
+}
+
+.subscribe-email input {
+  padding: 17px 0px 17px 16px;
+  border: 0;
+  background-color: #f3f3f3;
+}
+
+.subscribe-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 3px;
+  padding-right: 3px;
+}
+
+.subscribe-btn button {
+  color: #fff;
+  background-color: #f35320;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 14px 30px;
+  transition: 0.4s;
+}
+
+/*======== FACILITADORES =============*/
+.brand-area {
+  background-color: #fff;
+  padding: 100px 0px;
+}
+
+.sub-brand {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand-img {
+  flex-basis: 9vw;
+}/*# sourceMappingURL=style.css.map */

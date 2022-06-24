@@ -1,0 +1,115 @@
+/* ============ NAV ===============*/
+
+.nav-header-area {
+    background-color: #fff;
+    padding: 3px 0px;
+}
+
+.nav-logo {
+    color: #041b40 !important;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: $tipografia;
+}
+
+.navbar-nav1 .nav-item {
+    margin-left: 15px;
+    position: relative;
+}
+
+.navbar-nav1 .nav-item .nav-link {
+    font-weight: 600;
+    color: black;
+    transform: .4s;
+    i {
+        font-size: 8px;
+        color: black;
+        margin-left: 4px;
+        position: relative;
+        top: -2px;
+        transition: .4s;
+    }
+}
+
+
+.navbar-nav1 .nav-item{
+    &:hover .head-dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 153%;
+}}
+
+.navbar-nav1 .nav-item .head-dropdown {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 190%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in-out;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    padding: 10px 20px;
+    z-index: 99;
+    li {
+        display: block;
+        a {
+            display: block;
+            color: #000000;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 40px;
+            transition: .4s;
+        }
+    }
+}
+
+.nav-chart i {
+    font-size: 30px;
+    color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    top: 4px;
+}
+
+.nav-form {
+    position: relative;
+    width: 19%;
+    input {
+        width: 100%;
+        height: 45px;
+        border: 1px solid #f5f5f5;
+        border-radius: 2px;
+        background-color: #f5f5f5;
+        transition: 0.5s;
+        color: #111111;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 15px;
+    }
+    button {
+        position: absolute;
+        right: 20px;
+        top: 8px;
+        border: none;
+        background-color: transparent;
+        color: #000;
+        font-size: 21px;
+    }
+}
+
+
+/* efecto en nav */
+
+#navbar li a.active::after, #navbar li a:hover::after {
+    content: "";
+    width: 15px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: -3px;
+    left: 20px;
+}
