@@ -29,3 +29,18 @@ img {
 a:hover {
     color: rgba(92,95,236,0.6);
 }
+
+.breadcrumbs {
+    width: 100%;
+    padding: 1em 0;
+}
+
+.breadcrumbs ul {
+    font-size: 1rem;
+    margin-bottom: 0.8em;
+    padding-left: 12px;
+}
+
+.breadcrumbs li {
+    display: inline;
+}

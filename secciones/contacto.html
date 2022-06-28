@@ -40,7 +40,7 @@
       
             <li class="nav-item dropdown">
   
-              <a class="nav-link active" href="sale.html">
+              <a class="nav-link" href="sale.html">
                       SALE
               </a>
   
@@ -94,22 +94,12 @@
       
             </li>
       
-            <li class="nav-item dropdown">
-                    <a class="nav-link" href="stories.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Stories
-                    </a>
-      
-                    <ul class="head-dropdown" aria-labelledby="navbarDropdown">
-                      <li><a class="" href="stories.html">categoria1</a></li>
-                      <li><a class="" href="stories.html">categoria2</a></li>
-                      <li><a class="" href="stories.html">categoria3</a></li>
-                      <li><a class="" href="stories.html">categoria4</a></li>
-                      <li><a class="" href="stories.html">categoria5</a></li>
-                    </ul></a>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="somos.html">Somos</a>
             </li>
       
             <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
             </li>
       
           </ul>
@@ -140,6 +130,85 @@
     </nav>
   
 </header>
+
+<main>
+<!-- Referencia de donde estas -->
+<div class="breadcrumbs container">
+  <ul>
+    <li class="home">
+      <a href="index.html" title="Ir a la página inicial">Inicio</a>
+      <span>/ </span>
+    </li>
+    <li class="category5">
+      <strong>Contacto</strong>
+    </li>
+  </ul>
+</div> 
+
+<!-- banner -->
+<div class="bannar-area somos">
+</div>
+
+<!-- Contacto -->
+<div class="container">		
+  <div class="row">
+    <div class="col-10 offset-1 contacto">
+      <h1>CONTACTO</h1>
+      <form action="sender.php" method="post" id="contactoForm" novalidate="novalidate">
+        <div class="col-12">
+                      <div class="row">
+                          <div class="col-12 col-sm-6 form-group">
+                              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="NOMBRE*">
+                          </div>
+                          <div class="col-12 col-sm-6 form-group">
+                              <input type="text" class="form-control" id="apellido" name="apellido" placeholder="APELLIDO*">
+                          </div>
+                      </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" name="email" placeholder="MAIL*">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="TEL*">
+          </div>
+          <div class="form-group">
+            <textarea name="mensaje" id="mensaje" placeholder="MENSAJE"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p>* Datos obligatorios</p>
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-end">
+            <input type="hidden" name="send" value="1">
+            <button type="submit">ENVIAR</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-4 linkContactoSomos d-flex align-items-center justify-content-center mayorista">
+      <p> MAYORISTA<br>
+        <img src="images/contacto/whatsapp.png" alt="">154 4865 24809
+      </p>
+    </div>
+    <div class="col-12 col-md-4 whatsappContacto">
+      <div class="col-12 linkContactoSomos d-flex align-items-center justify-content-center" style="height:80px;">
+        <p>
+          SHOP <br>
+          024 7854 15468
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 linkContactoSomos d-flex align-items-center justify-content-center localcontact">
+      <p>
+        LOCAL <br>
+        014 8465 7546
+      </p>
+    </div>
+  </div>
+</div>
+</main>
 
 
 <!-- Footer -->
@@ -176,7 +245,7 @@
           <div class="col-12 newsletterFooter">
             <div>
               <input type="text" placeholder="Ingresá tu e-mail aquí" data-toggle="modal" data-target="#exampleModal">
-              <button data-toggle="modal" data-target="#exampleModal">&gt;</button>
+              <button data-toggle="modal" data-target="#exampleModal"></button>
             </div>
           </div>
         </div>

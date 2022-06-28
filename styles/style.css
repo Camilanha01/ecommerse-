@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*========== GENERAL ===============*/
 *, ::after, ::before {
   box-sizing: border-box;
@@ -26,6 +27,21 @@ img {
 
 a:hover {
   color: rgba(92, 95, 236, 0.6);
+}
+
+.breadcrumbs {
+  width: 100%;
+  padding: 1em 0;
+}
+
+.breadcrumbs ul {
+  font-size: 1rem;
+  margin-bottom: 0.8em;
+  padding-left: 12px;
+}
+
+.breadcrumbs li {
+  display: inline;
 }
 
 /* ============ NAV ===============*/
@@ -520,12 +536,6 @@ button.normal {
   color: #fff !important;
 }
 
-@media (min-width: 425px) {
-  .col-md-6 {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-}
 /*=========== Footer ==============*/
 .footer {
   background: #f3f1ec;
@@ -611,4 +621,109 @@ h1 {
   .newsletterFooterTitulo {
     margin-top: 0;
   }
+}
+/*======== Sección Somos ==============*/
+/*banner somos*/
+.bannar-area.somos {
+  background-image: url(../img/bannersomos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0px;
+  background-attachment: fixed;
+}
+
+.somos {
+  text-align: center;
+}
+
+.somos h1 {
+  margin: 50px 0;
+  color: #000;
+  font-size: 1.5rem;
+  /*font-family: 'Montserrat', sans-serif;*/
+  margin-bottom: 30px;
+}
+
+/*local/mayorista*/
+@media (min-width: 768px) {
+  .localHome {
+    padding-right: 15px;
+    padding-left: 0;
+  }
+}
+.localHome img {
+  max-width: 100%;
+}
+
+@media (min-width: 320px) {
+  .localHome {
+    padding-top: 15px;
+  }
+}
+/*======== CONTACTO =========*/
+.contacto {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contacto {
+  text-align: center;
+}
+
+.contacto input {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  border-radius: 0;
+  border: 1px solid #000;
+  margin: 10px;
+}
+
+.contacto textarea {
+  border-radius: 0;
+  border: 1px solid #000;
+  width: 100%;
+  height: 100px;
+  margin: 10px;
+}
+
+.contacto form p {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.contacto p {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+
+.contacto form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  margin-right: 15px;
+  padding: 5px 40px;
+  cursor: pointer;
+}
+
+.linkContactoMayorista, .linkContactoSomos {
+  border: 1px solid #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .whatsappContacto {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.linkContactoMayorista p, .linkContactoSomos p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
