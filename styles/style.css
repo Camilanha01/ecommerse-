@@ -155,6 +155,141 @@ a:hover {
   left: 20px;
 }
 
+/*========= MAIN =========*/
+@media (max-width: 400px) {
+  .bannar-area {
+    padding: 66px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .bannar-area {
+    padding: 117px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .bannar-area {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner2.jpg);
+  }
+}
+@media (max-width: 575px) {
+  .bannar-content {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-content h1 {
+    font-size: 41px;
+  }
+}
+@media (max-width: 575px) {
+  .bannar-content h1 {
+    font-size: 53px;
+  }
+}
+@media (max-width: 767px) {
+  .bannar-content h1 {
+    font-size: 40px;
+  }
+
+  .bannar-content span {
+    color: #fff;
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-content p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 0px 49px;
+  }
+}
+@media (max-width: 575px) {
+  .bannar-btn {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .defult-btn {
+    font-size: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-btn2 {
+    font-size: 11px;
+  }
+}
+/*========= BANNER =========*/
+@media (max-width: 799px) {
+  #banner {
+    height: 15vh;
+  }
+}
+@media (max-width: 799px) {
+  #banner h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 477px) {
+  #banner {
+    height: 25vh;
+  }
+}
+@media (max-width: 477px) {
+  #banner h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+}
+/*======== FOOTER ========*/
+@media (min-width: 768px) {
+  .followUsFooter {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .newsletterFooterTitulo {
+    margin-top: 0;
+  }
+}
+/*======== SECCION SOMOS ========*/
+/*local/mayorista*/
+@media (min-width: 768px) {
+  .localHome {
+    padding-right: 15px;
+    padding-left: 0;
+  }
+}
+.localHome img {
+  max-width: 100%;
+}
+
+@media (min-width: 320px) {
+  .localHome {
+    padding-top: 15px;
+  }
+}
+/*======= CONTACTO ========*/
+@media (max-width: 767px) {
+  .whatsappContacto {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*======= SECCION MUJER/HOMBRE ========*/
+@media (max-width: 768px) {
+  .col {
+    position: initial;
+    width: initial;
+    margin: 0 0 20px 0;
+    padding: 20px;
+  }
+
+  .col2 {
+    padding: 0;
+  }
+}
 /*============== MAIN ================*/
 .bannar-area {
   background-image: url(../img/banner1.jpg);
@@ -221,70 +356,6 @@ a:hover {
   text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
 }
 
-/*responsive*/
-@media (max-width: 400px) {
-  .bannar-area {
-    padding: 66px 0px;
-  }
-}
-@media (max-width: 767px) {
-  .bannar-area {
-    padding: 117px 0px;
-  }
-}
-@media (max-width: 767px) {
-  .bannar-area {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner2.jpg);
-  }
-}
-@media (max-width: 575px) {
-  .bannar-content {
-    text-align: center;
-  }
-}
-@media (max-width: 400px) {
-  .bannar-content h1 {
-    font-size: 41px;
-  }
-}
-@media (max-width: 575px) {
-  .bannar-content h1 {
-    font-size: 53px;
-  }
-}
-@media (max-width: 767px) {
-  .bannar-content h1 {
-    font-size: 40px;
-  }
-
-  .bannar-content span {
-    color: #fff;
-    font-size: 18px;
-  }
-}
-@media (max-width: 400px) {
-  .bannar-content p {
-    color: #fff;
-    font-size: 15px;
-    line-height: 28px;
-    padding: 0px 49px;
-  }
-}
-@media (max-width: 575px) {
-  .bannar-btn {
-    justify-content: center;
-  }
-}
-@media (max-width: 400px) {
-  .defult-btn {
-    font-size: 11px;
-  }
-}
-@media (max-width: 400px) {
-  .bannar-btn2 {
-    font-size: 11px;
-  }
-}
 /*============= SECCION 2 CSS ===================*/
 #home_seccion1 {
   padding-top: 0;
@@ -449,28 +520,6 @@ button.normal {
   color: red;
 }
 
-@media (max-width: 799px) {
-  #banner {
-    height: 15vh;
-  }
-}
-@media (max-width: 799px) {
-  #banner h1 {
-    font-size: 30px;
-    margin-bottom: 5px;
-  }
-}
-@media (max-width: 477px) {
-  #banner {
-    height: 25vh;
-  }
-}
-@media (max-width: 477px) {
-  #banner h1 {
-    font-size: 35px;
-    margin-bottom: 5px;
-  }
-}
 /*======== FACILITADORES =============*/
 .icon i {
   font-size: 50px;
@@ -541,6 +590,7 @@ button.normal {
   background: #f3f1ec;
   margin-top: 50px;
   margin-bottom: 0;
+  padding-top: 40px;
 }
 
 .footer ul, p {
@@ -585,11 +635,6 @@ button.normal {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  .followUsFooter {
-    margin-top: 0;
-  }
-}
 .followUsFooter {
   margin-top: 30px;
 }
@@ -617,11 +662,6 @@ h1 {
   margin-top: 30px;
 }
 
-@media (min-width: 768px) {
-  .newsletterFooterTitulo {
-    margin-top: 0;
-  }
-}
 /*======== Sección Somos ==============*/
 /*banner somos*/
 .bannar-area.somos {
@@ -645,22 +685,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-/*local/mayorista*/
-@media (min-width: 768px) {
-  .localHome {
-    padding-right: 15px;
-    padding-left: 0;
-  }
-}
-.localHome img {
-  max-width: 100%;
-}
-
-@media (min-width: 320px) {
-  .localHome {
-    padding-top: 15px;
-  }
-}
 /*======== CONTACTO =========*/
 .contacto {
   margin-top: 50px;
@@ -714,16 +738,102 @@ h1 {
   padding-bottom: 0;
 }
 
-@media (max-width: 767px) {
-  .whatsappContacto {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 .linkContactoMayorista p, .linkContactoSomos p {
   font-family: "Oswald", sans-serif;
   font-size: 1.3rem;
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+/*============ MUJER ===============*/
+.items {
+  margin: 0 10% 0 10%;
+}
+
+section h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  width: 17%;
+  margin-right: 40px;
+  background: whitesmoke;
+  padding: 30px;
+  position: fixed;
+  left: 0px;
+  top: 100px;
+}
+
+.col2 {
+  padding-left: 100px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.items2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  max-width: 300px;
+  margin: 15px;
+}
+
+.card > h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.card > p {
+  text-align: center;
+}
+
+/*======== SALE ============*/
+.tranding-product-area {
+  background-color: #ffffff;
+  padding: 30px 0px;
+}
+
+.sub-tranding-product {
+  transition: 0.4s;
+  margin-bottom: 30px;
+}
+
+.tranding-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.tranding-img img {
+  transition: 0.4s;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.tranding-sale span {
+  width: 69px;
+  height: 42px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  background-color: #000;
+  text-align: center;
+  line-height: 42px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
