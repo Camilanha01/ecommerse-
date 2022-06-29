@@ -1,4 +1,140 @@
 @charset "UTF-8";
+/*========= MAIN =========*/
+@media (max-width: 400px) {
+  .bannar-area {
+    padding: 66px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .bannar-area {
+    padding: 117px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .bannar-area {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/banner2.jpg);
+  }
+}
+@media (max-width: 575px) {
+  .bannar-content {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-content h1 {
+    font-size: 41px;
+  }
+}
+@media (max-width: 575px) {
+  .bannar-content h1 {
+    font-size: 53px;
+  }
+}
+@media (max-width: 767px) {
+  .bannar-content h1 {
+    font-size: 40px;
+  }
+
+  .bannar-content span {
+    color: #fff;
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-content p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 0px 49px;
+  }
+}
+@media (max-width: 575px) {
+  .bannar-btn {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .defult-btn {
+    font-size: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-btn2 {
+    font-size: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .bannar-content h1 {
+    font-size: 40px;
+  }
+}
+/*========= BANNER =========*/
+@media (max-width: 799px) {
+  #banner {
+    height: 15vh;
+  }
+}
+@media (max-width: 799px) {
+  #banner h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 477px) {
+  #banner {
+    height: 25vh;
+  }
+}
+@media (max-width: 477px) {
+  #banner h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+}
+/*======== FOOTER ========*/
+@media (min-width: 768px) {
+  .followUsFooter {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .newsletterFooterTitulo {
+    margin-top: 0;
+  }
+}
+/*======== SECCION SOMOS ========*/
+/*local/mayorista*/
+@media (min-width: 768px) {
+  .localHome {
+    padding-right: 15px;
+    padding-left: 0;
+  }
+}
+.localHome img {
+  max-width: 100%;
+}
+
+@media (min-width: 320px) {
+  .localHome {
+    padding-top: 15px;
+  }
+}
+/*======= CONTACTO ========*/
+@media (max-width: 767px) {
+  .whatsappContacto {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*======= SECCION MUJER/HOMBRE ========*/
+@media (max-width: 768px) {
+  .col {
+    position: initial;
+    width: initial;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+}
 /*========== GENERAL ===============*/
 *, ::after, ::before {
   box-sizing: border-box;
@@ -155,141 +291,6 @@ a:hover {
   left: 20px;
 }
 
-/*========= MAIN =========*/
-@media (max-width: 400px) {
-  .bannar-area {
-    padding: 66px 0px;
-  }
-}
-@media (max-width: 767px) {
-  .bannar-area {
-    padding: 117px 0px;
-  }
-}
-@media (max-width: 767px) {
-  .bannar-area {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner2.jpg);
-  }
-}
-@media (max-width: 575px) {
-  .bannar-content {
-    text-align: center;
-  }
-}
-@media (max-width: 400px) {
-  .bannar-content h1 {
-    font-size: 41px;
-  }
-}
-@media (max-width: 575px) {
-  .bannar-content h1 {
-    font-size: 53px;
-  }
-}
-@media (max-width: 767px) {
-  .bannar-content h1 {
-    font-size: 40px;
-  }
-
-  .bannar-content span {
-    color: #fff;
-    font-size: 18px;
-  }
-}
-@media (max-width: 400px) {
-  .bannar-content p {
-    color: #fff;
-    font-size: 15px;
-    line-height: 28px;
-    padding: 0px 49px;
-  }
-}
-@media (max-width: 575px) {
-  .bannar-btn {
-    justify-content: center;
-  }
-}
-@media (max-width: 400px) {
-  .defult-btn {
-    font-size: 11px;
-  }
-}
-@media (max-width: 400px) {
-  .bannar-btn2 {
-    font-size: 11px;
-  }
-}
-/*========= BANNER =========*/
-@media (max-width: 799px) {
-  #banner {
-    height: 15vh;
-  }
-}
-@media (max-width: 799px) {
-  #banner h1 {
-    font-size: 30px;
-    margin-bottom: 5px;
-  }
-}
-@media (max-width: 477px) {
-  #banner {
-    height: 25vh;
-  }
-}
-@media (max-width: 477px) {
-  #banner h1 {
-    font-size: 35px;
-    margin-bottom: 5px;
-  }
-}
-/*======== FOOTER ========*/
-@media (min-width: 768px) {
-  .followUsFooter {
-    margin-top: 0;
-  }
-}
-@media (min-width: 768px) {
-  .newsletterFooterTitulo {
-    margin-top: 0;
-  }
-}
-/*======== SECCION SOMOS ========*/
-/*local/mayorista*/
-@media (min-width: 768px) {
-  .localHome {
-    padding-right: 15px;
-    padding-left: 0;
-  }
-}
-.localHome img {
-  max-width: 100%;
-}
-
-@media (min-width: 320px) {
-  .localHome {
-    padding-top: 15px;
-  }
-}
-/*======= CONTACTO ========*/
-@media (max-width: 767px) {
-  .whatsappContacto {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-/*======= SECCION MUJER/HOMBRE ========*/
-@media (max-width: 768px) {
-  .col {
-    position: initial;
-    width: initial;
-    margin: 0 0 20px 0;
-    padding: 20px;
-  }
-
-  .col2 {
-    padding: 0;
-  }
-}
 /*============== MAIN ================*/
 .bannar-area {
   background-image: url(../img/banner1.jpg);
@@ -310,15 +311,31 @@ a:hover {
   font-size: 18px;
 }
 
-.bannar-content h1 {
-  color: #fff;
-  font-size: 70px;
-  font-weight: bold;
-  margin: 15px 0px;
-  letter-spacing: 0.1em;
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
-}
-
+/*.bannar-content h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 15px 0px;
+    letter-spacing: .1em;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+}*/
 .bannar-content p {
   color: #fff;
   font-size: 15px;
@@ -639,9 +656,10 @@ button.normal {
   margin-top: 30px;
 }
 
-h1 {
-  color: #000;
-  font-size: 1.5rem;
+.bannar-area h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
 .direccion {
