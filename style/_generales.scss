@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-$tipografia: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$tipografia: sans-serif;
 
 a {
     text-decoration: none;
@@ -16,8 +16,16 @@ body, p, a, span {
     font-family: $tipografia;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    color: #fff;
+}
+
+h2, h3, h4, h5, h6 {
     font-family: $tipografia;
+}
+
+h2.title {
+    margin-bottom: 48px;
 }
 
 img {
@@ -43,4 +51,32 @@ a:hover {
 
 .breadcrumbs li {
     display: inline;
+}
+
+/* footer */
+
+div#redes-footer {
+    font-size: 25px;
+}
+
+#redes-footer a i {
+    color: #fff;
+}
+
+#redes-footer a i {
+    color: #fff;
+}
+
+/* somos */
+
+p.text-somos {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    color: #15305d;
+}
+
+/* contacto */
+
+h1.text-contacto {
+    color: #000;
 }
